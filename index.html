@@ -1,30 +1,403 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>益健堂｜中老年健康体验门店</title><meta name="description" content="先体验，再决定。中老年健康体验、分时到店、真实设备与产品了解。"><style>
-:root{--ink:#24352d;--orange:#d96b43;--green:#718b76;--line:rgba(36,53,45,.13)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;overflow-x:hidden}a{color:inherit}.wrap{width:min(1200px,91vw);margin:auto}.nav{position:fixed;z-index:80;left:50%;top:18px;transform:translateX(-50%);width:min(1180px,94vw);height:64px;border-radius:22px;background:rgba(255,250,243,.9);border:1px solid rgba(255,255,255,.8);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 22px;box-shadow:0 14px 50px rgba(23,35,29,.08)}.brand{font-weight:950}.navlinks{display:flex;gap:22px;font-size:13px}.nav a{text-decoration:none}.navcta{background:var(--ink);color:#fff;padding:11px 17px;border-radius:999px;font-weight:900}.kicker{font-size:11px;letter-spacing:.18em;font-weight:950;color:var(--orange)}.display{font-size:clamp(58px,8.2vw,122px);line-height:.88;letter-spacing:-.068em;margin:16px 0 24px;font-weight:950}.big{font-size:clamp(45px,5.7vw,82px);line-height:.98;letter-spacing:-.055em;margin:14px 0 18px}.lead{font-size:17px;line-height:1.95;color:#657069;max-width:680px}.btn{display:inline-flex;text-decoration:none;border-radius:999px;padding:14px 20px;font-weight:900;border:1px solid var(--line);transition:.25s}.btn.primary{background:#d9653f;color:#fff;border-color:transparent;box-shadow:0 10px 24px rgba(217,101,63,.18)}.btn:hover{transform:translateY(-3px)}.reveal{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.7,.2,1)}.reveal.on{opacity:1;transform:none}
-.hero{position:relative;min-height:100svh;background:linear-gradient(135deg,#fff7ec 0%,#ffe4cf 38%,#f8efe4 66%,#dfeadf 100%);display:grid;place-items:center;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 68% 34%,rgba(232,139,84,.20),transparent 22%),radial-gradient(circle at 82% 72%,rgba(113,139,118,.18),transparent 25%);pointer-events:none}#particles{position:absolute;inset:0;width:100%;height:100%;opacity:.92}.hero-inner{position:relative;z-index:2;width:min(1200px,91vw);padding:145px 0 80px}.hero .display em{font-style:normal;color:#d76b43}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px}.pill{padding:10px 13px;border:1px solid rgba(23,35,29,.12);border-radius:999px;background:rgba(255,255,255,.52);font-size:12px;font-weight:900}.scrollmark{position:absolute;right:4vw;bottom:40px;z-index:2;writing-mode:vertical-rl;font-size:10px;letter-spacing:.22em;color:rgba(23,35,29,.42)}
-.time{position:relative;padding:130px 0 120px;background:linear-gradient(180deg,#fffdf9,#f5f0e9)}.time-head{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:58px}.six{font-size:clamp(92px,13vw,182px);font-weight:950;line-height:.78;letter-spacing:-.085em;color:#d86a42;margin:14px 0 30px}.time-stage{display:grid;grid-template-columns:1.08fr .92fr;gap:30px}.time-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.time-chip{height:126px;border:1px solid rgba(36,53,45,.08);border-radius:26px;background:#fff;color:var(--ink);cursor:pointer;text-align:left;padding:18px;font-size:28px;font-weight:950;transition:.3s}.time-chip:hover,.time-chip.active{background:var(--ink);color:#fff;transform:translateY(-4px)}.time-note{border-radius:32px;background:#fff;padding:42px;min-height:398px;display:flex;flex-direction:column;justify-content:space-between}.time-note strong{font-size:70px;letter-spacing:-.06em}.time-note h3{font-size:28px;margin:10px 0}.time-note p{line-height:1.85;color:#6c766f}.story{position:relative;padding:0 0 120px;background:linear-gradient(180deg,#e7f0e5,#dce8da)}.story-frame{position:relative;min-height:650px;border-radius:40px;overflow:hidden;background:linear-gradient(135deg,#6f8b75,#30483b);box-shadow:0 30px 90px rgba(23,35,29,.13)}.story-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;opacity:.72}.story-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,35,29,.78),rgba(23,35,29,.2) 70%,transparent)}.story-copy{position:relative;z-index:2;color:#fff;max-width:620px;padding:58px;min-height:650px;display:flex;flex-direction:column;justify-content:flex-end}.story-copy .lead{color:rgba(255,255,255,.84)}
-.event{padding:120px 0;background:linear-gradient(180deg,#f7d7bf,#f3c29f)}.event-shell{display:grid;grid-template-columns:.92fr 1.08fr;gap:22px}.days{border-radius:38px;background:linear-gradient(145deg,#c95c37,#ed8e55);color:#fff;padding:50px;min-height:580px;display:flex;flex-direction:column;justify-content:space-between}.days .num{font-size:clamp(130px,18vw,250px);font-weight:950;letter-spacing:-.1em;line-height:.72}.days p{line-height:1.9;color:rgba(255,255,255,.88)}.event-info{border-radius:38px;background:linear-gradient(145deg,#2f4d3c,#58715e);color:#fff;padding:52px;display:grid;align-content:center}.event-info h3{font-size:48px;margin:10px 0 20px}.event-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}.event-item{padding:18px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.09);font-weight:850}
-.products{padding:125px 0;background:linear-gradient(180deg,#f3dfd1 0%,#eee8df 34%,#e7ebe5 72%,#dfe9dd 100%)}.product-head{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:52px}.product-stage{display:grid;grid-template-columns:190px 1fr;gap:18px;min-height:650px}.product-index{display:flex;flex-direction:column;gap:8px}.p-tab{border:1px solid var(--line);background:rgba(255,250,244,.62);border-radius:18px;padding:15px 13px;text-align:left;cursor:pointer;font-weight:900;color:#68736c;transition:.25s}.p-tab small{display:block;color:var(--orange);margin-bottom:4px}.p-tab:hover,.p-tab.active{background:var(--ink);color:#fff;transform:translateX(5px)}.product-hero{border-radius:40px;background:rgba(255,252,247,.88);overflow:hidden;border:1px solid var(--line);display:grid;grid-template-columns:1.15fr .85fr;min-height:650px}.product-visual{display:grid;place-items:center;padding:42px;background:radial-gradient(circle at 48% 42%,#fffdf9,#f3eee7 48%,#e4e9e3)}.product-visual img{max-width:92%;max-height:480px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 28px 28px rgba(26,36,31,.12));transition:.35s}.product-copy{padding:50px 44px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#fffaf4,#f6f1e9)}.product-copy h3{font-size:44px;line-height:1.05;margin:16px 0 20px;letter-spacing:-.045em}.product-copy p{color:#66716a;line-height:1.95;font-size:15px}.count{font-size:12px;font-weight:900;letter-spacing:.15em;color:var(--orange)}
-.people{padding:120px 0;background:linear-gradient(180deg,#dbe8da,#edf3ea)}.people-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.people-photo{border-radius:38px;overflow:hidden;min-height:580px;background:linear-gradient(135deg,#b7cbb5,#6f8b75)}.people-photo img{width:100%;height:100%;object-fit:cover;opacity:.86}.people-copy{border-radius:38px;background:#f7fbf6;padding:52px;display:flex;flex-direction:column;justify-content:center}.quote{font-size:37px;line-height:1.28;letter-spacing:-.035em;font-weight:900;margin:14px 0 24px}.checks{display:grid;gap:10px;margin-top:22px}.check{background:#fff;padding:16px 17px;border-radius:16px;font-weight:850}
-.reserve{padding:125px 0;background:linear-gradient(180deg,#f8ddc8,#f3e2d3)}.reserve-shell{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px}.reserve-intro{border-radius:38px;background:linear-gradient(145deg,#c85b38,#ea8b54);color:#fff;padding:50px;min-height:610px;display:flex;flex-direction:column;justify-content:space-between}.reserve-intro p{line-height:1.9;color:rgba(255,255,255,.88)}.reserve-form{border-radius:38px;background:#fffdf9;padding:42px;border:1px solid var(--line);box-shadow:0 22px 70px rgba(23,35,29,.09)}.reserve-form h3{font-size:30px;margin:0 0 8px}.hint{font-size:13px;color:#7a837d;line-height:1.7;margin-bottom:22px}.reserve-times{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px}.reserve-time{border:1px solid var(--line);background:#f7f3ed;border-radius:15px;padding:13px 9px;font-weight:900;cursor:pointer}.reserve-time.active,.reserve-time:hover{background:var(--ink);color:#fff}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:900}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px 14px;font:inherit}.submit{margin-top:18px;width:100%;border:0;border-radius:999px;padding:15px;background:var(--ink);color:#fff;font-weight:900;cursor:pointer}.status{min-height:21px;margin-top:10px;font-size:13px;color:#5f7766;font-weight:800}
-.location{padding:0 0 125px;background:linear-gradient(180deg,#e5eee4,#f5f1e9)}.location-shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}.contact-card{border-radius:38px;background:#fff;padding:44px;border:1px solid var(--line);min-height:500px;display:flex;flex-direction:column;justify-content:space-between}.contact-list{display:grid;gap:12px}.contact-row{padding:17px 18px;border-radius:18px;background:#f7f3ed}.contact-row small{display:block;color:#8a938d;font-size:11px;font-weight:900;margin-bottom:6px}.map-card{position:relative;min-height:500px;border-radius:38px;overflow:hidden;background:linear-gradient(90deg,rgba(255,255,255,.28) 1px,transparent 1px) 0 0/52px 52px,linear-gradient(rgba(255,255,255,.28) 1px,transparent 1px) 0 0/52px 52px,linear-gradient(135deg,#dce7dc,#efe4d4)}.map-card:before{content:"";position:absolute;width:740px;height:58px;left:-120px;top:180px;border-radius:999px;background:rgba(255,255,255,.72);transform:rotate(-18deg);box-shadow:0 110px 0 rgba(255,255,255,.52)}.pin{position:absolute;left:56%;top:42%;width:70px;height:70px;border-radius:50% 50% 50% 0;background:#d96b43;transform:translate(-50%,-50%) rotate(-45deg);box-shadow:0 18px 35px rgba(139,76,48,.25)}.pin:after{content:"";position:absolute;width:25px;height:25px;border-radius:50%;background:#fff;left:22px;top:22px}.map-label{position:absolute;left:56%;top:58%;transform:translateX(-50%);background:rgba(255,255,255,.94);padding:16px 19px;border-radius:18px;text-align:center;min-width:255px;box-shadow:0 12px 30px rgba(23,35,29,.12)}.map-actions{position:absolute;left:22px;right:22px;bottom:22px;display:flex;gap:10px}.map-action{flex:1;text-align:center;text-decoration:none;padding:14px;border-radius:999px;background:#fff;font-weight:900;border:1px solid var(--line)}.map-action.primary{background:var(--ink);color:#fff}
-.visit{padding:125px 0;background:linear-gradient(145deg,#385846,#58715e 55%,#8a7a60);color:#fff}.visit-head{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:46px}.visit .lead{color:#d5ddd7}.slots{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}.slot{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:21px 7px;text-align:center;transition:.25s}.slot:hover{background:var(--orange);transform:translateY(-4px)}.slot b{display:block;font-size:20px}.slot span{font-size:10px;color:#d9dfdb}.visit-actions{margin-top:30px;display:flex;justify-content:space-between;gap:30px;align-items:center}.visit-note{font-size:12px;color:#c2cbc5;line-height:1.8;max-width:650px}footer{padding:28px 0 40px;background:#385846;color:#c4cec7;font-size:11px}
-@media(max-width:950px){.navlinks{display:none}.time-head,.time-stage,.event-shell,.product-head,.people-grid,.reserve-shell,.location-shell,.visit-head{grid-template-columns:1fr}.product-stage{grid-template-columns:1fr}.product-index{display:grid;grid-template-columns:repeat(3,1fr)}.product-hero{grid-template-columns:1fr}.slots{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.display{font-size:61px}.big{font-size:45px}.time,.event,.products,.people,.reserve,.visit{padding:88px 0}.time-rail{grid-template-columns:repeat(2,1fr)}.time-chip{height:104px;font-size:23px}.event-list,.fields{grid-template-columns:1fr}.product-index{grid-template-columns:1fr 1fr}.product-copy,.people-copy,.reserve-form,.contact-card{padding:30px}.reserve-times{grid-template-columns:repeat(2,1fr)}.map-actions{flex-direction:column}.visit-actions{display:block}}
-</style></head><body><nav class="nav"><div class="brand">益健堂 · 健康体验门店</div><div class="navlinks"><a href="#time">体验时间</a><a href="#event">限时福利</a><a href="#products">真实设备</a><a href="#reserve">预约体验</a><a href="#location">门店位置</a></div><a class="navcta" href="#reserve">预约体验</a></nav><main>
-<section class="hero"><canvas id="particles"></canvas><div class="hero-inner"><div class="kicker">YI JIAN TANG · HEALTH EXPERIENCE STORE</div><h1 class="display">先体验。<br><em>再决定。</em></h1><p class="lead">为中老年家庭提供清晰、从容的健康体验路径。先体验，再了解设备，再决定是否进一步选择。</p><div class="hero-meta"><span class="pill">06:00 起</span><span class="pill">分时到店</span><span class="pill">免费体验</span><span class="pill">真实设备</span></div></div><div class="scrollmark">SCROLL TO EXPERIENCE</div></section>
-<section id="time" class="time"><div class="wrap"><div class="time-head reveal"><div><div class="kicker">MORNING EXPERIENCE · 06:00</div><div class="six">06:00</div><h2 class="big">清晨六点，<br>第一场体验开始。</h2></div><div><p class="lead" style="font-size:20px;color:#3f4d45">分时入场，让等待更少，让每一次体验更从容。</p><p class="lead">从早间第一场开始，依照时段有序安排。首次到店只需要先确认时间、取号入场，再根据门店当天设备情况完成体验。</p></div></div><div class="time-stage"><div class="time-rail reveal" id="timeRail"></div><div class="time-note reveal"><div><div class="kicker">SELECT A TIME</div><strong id="activeTime">06:00</strong><h3>体验场次</h3><p id="timeText">按照当天安排取号入场，具体体验内容与名额以门店实际情况为准。</p></div><div style="font-size:12px;color:#8a938d">点击时间，页面会明确反馈当前选择。</div></div></div></div></section>
-<section class="story"><div class="wrap story-frame reveal"><img id="scenePhoto" alt="中老年健康交流场景"><div class="story-copy"><div class="kicker" style="color:#ffc9a5">FROM ARRIVAL TO EXPERIENCE</div><h2 class="big">先坐下来，<br>再慢慢了解。</h2><p class="lead">对于第一次到店的人，重要的不是一次记住全部参数，而是先知道这里在做什么、自己下一步该做什么。</p></div></div></section>
-<section id="event" class="event"><div class="wrap event-shell"><div class="days reveal"><div><div class="kicker" style="color:#ffe0cb">LIMITED MORNING EVENT</div><div class="num">30</div></div><div><h2 style="font-size:48px;margin:0 0 12px">DAYS</h2><p>暂定30天早间暖心福利。活动是阶段性的，免费体验与真实设备才是门店长期核心。</p></div></div><div class="event-info reveal"><div class="kicker" style="color:#f2aa7d">MORNING GIFT</div><h3>早一点来，<br>多一份暖心。</h3><p style="color:#d5ddd7;line-height:1.9">早间到店体验的中老年朋友，可领取一份包子与豆浆。具体日期、数量及发放安排以门店当天为准。</p><div class="event-list"><div class="event-item">包子 × 1</div><div class="event-item">豆浆 × 1</div><div class="event-item">早间到店</div><div class="event-item">限时30天</div></div></div></div></section>
-<section id="products" class="products"><div class="wrap"><div class="product-head reveal"><div><div class="kicker">REAL EQUIPMENT · REAL CHOICE</div><h2 class="big">体验之后，<br>再了解设备。</h2></div><p class="lead">六款设备不做商城式堆叠。选择哪一款，哪一款就是当前视觉主角，信息层级始终清楚。</p></div><div class="product-stage reveal"><div class="product-index" id="productTabs"></div><div class="product-hero"><div class="product-visual"><img id="productImg" alt=""></div><div class="product-copy"><div class="count" id="productCount"></div><h3 id="productName"></h3><p id="productDesc"></p><div style="margin-top:26px;font-size:12px;color:#909890">点击左侧产品切换 · 手机端直接点选</div></div></div></div></div></section>
-<section class="people"><div class="wrap people-grid"><div class="people-photo reveal"><img id="peoplePhoto" alt="陪伴与交流"></div><div class="people-copy reveal"><div class="kicker">SERVICE IS PART OF THE EXPERIENCE</div><div class="quote">设备是入口，<br>人与人的交流，才让体验变得可信。</div><p class="lead">让第一次来的中老年人和家属感到：这里看得懂、有人解释、可以自己决定下一步。</p><div class="checks"><div class="check">先体验，再决定是否进一步了解</div><div class="check">分时安排，减少无意义等待</div><div class="check">产品信息清楚，不夸大功效</div></div></div></div></section>
-<section id="reserve" class="reserve"><div class="wrap reserve-shell"><div class="reserve-intro reveal"><div><div class="kicker" style="color:#ffe3cf">BOOK AN EXPERIENCE</div><h2 class="big">想来体验，<br>先选一个合适的时间。</h2><p>用户看完时间、设备和门店体验后，可以直接选择意向场次，留下基础联系信息。</p></div><div style="font-weight:900">免费体验 · 分时到店 · 场次以门店当天安排为准</div></div><form class="reserve-form reveal" id="reserveForm"><h3>预约体验意向</h3><div class="hint">先选时间，再填写基础信息。当前为展示版交互，不会把信息发送到门店后台。</div><div class="reserve-times" id="reserveTimes"></div><input type="hidden" id="reserveSelectedTime"><div class="fields"><div class="field"><label>称呼</label><input id="visitorName" placeholder="例如：李阿姨 / 王先生"></div><div class="field"><label>联系电话</label><input id="visitorPhone" placeholder="用于门店联系确认"></div><div class="field"><label>主要想了解</label><select><option>肩颈 / 腰背体验</option><option>设备产品</option><option>供氧相关</option><option>先到店了解</option></select></div><div class="field"><label>来店人</label><select><option>本人</option><option>父母 / 长辈</option><option>陪同家人</option></select></div><div class="field full"><label>备注（可选）</label><textarea rows="3" placeholder="例如：希望安排上午场次"></textarea></div></div><button class="submit" type="submit">确认预约意向</button><div class="status" id="reserveStatus"></div><div class="hint">演示说明：当前静态网页不会实际收集或发送个人信息。</div></form></div></section>
-<section id="location" class="location"><div class="wrap location-shell"><div class="contact-card reveal"><div><div class="kicker">STORE LOCATION · DEMO</div><h2 style="font-size:40px">到店之前，<br>先把路线看清楚。</h2><p class="lead">地址与联系电话目前为演示信息，正式上线时替换为门店真实资料即可。</p></div><div class="contact-list"><div class="contact-row"><small>门店地址</small><strong>安徽省合肥市包河区滨湖小区 XXX</strong></div><div class="contact-row"><small>到店联系</small><strong>张先生</strong></div><div class="contact-row"><small>联系电话</small><strong>139-XXXX-7777</strong></div></div></div><div class="map-card reveal"><div class="pin"></div><div class="map-label"><strong>益健堂 · 健康体验门店</strong><br><span style="font-size:12px;color:#707b74">合肥市包河区 · 滨湖片区</span></div><div class="map-actions"><a class="map-action primary" target="_blank" rel="noopener" href="https://uri.amap.com/search?keyword=%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E5%8C%85%E6%B2%B3%E5%8C%BA%E6%BB%A8%E6%B9%96%E5%B0%8F%E5%8C%BA">高德地图导航</a><a class="map-action" target="_blank" rel="noopener" href="https://map.baidu.com/search/%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E5%8C%85%E6%B2%B3%E5%8C%BA%E6%BB%A8%E6%B9%96%E5%B0%8F%E5%8C%BA">百度地图查看</a></div></div></div></section>
-<section class="visit"><div class="wrap"><div class="visit-head reveal"><div><div class="kicker" style="color:#ef9c6a">VISIT SCHEDULE</div><h2 class="big">什么时候来，<br>一眼看明白。</h2></div><p class="lead">九个场次完整对应，从清晨到下午保持一致的信息秩序，让首次访问者无需猜测下一步。</p></div><div class="slots reveal" id="slots"></div><div class="visit-actions reveal"><div class="visit-note">体验次数、当日名额及后续场次尚未最终确定，因此网站不写死承诺。具体体验安排、活动名额及产品情况以门店当日实际情况为准。</div><a class="btn primary" href="#reserve">选择预约场次</a></div></div></section></main><footer><div class="wrap">益健堂中老年健康体验门店 · 审美优化作业最终版</div></footer>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>益健堂｜中老年健康体验门店 V3</title>
+<meta name="description" content="先体验，再决定。中老年健康体验、分时到店、真实设备与产品了解。">
+<style>
+:root{
+ --ink:#24352d;--ink2:#31463a;--paper:#fff8ee;--paper2:#f3eadf;--white:#fff;
+ --orange:#d96b43;--orange2:#f0ae77;--green:#718b76;--green2:#dce8dc;--line:rgba(36,53,45,.13);
+ --shadow:0 30px 90px rgba(23,35,29,.13);--r:34px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;overflow-x:hidden}
+button,a{font:inherit}a{color:inherit}.wrap{width:min(1200px,91vw);margin:auto}
+.nav{position:fixed;z-index:80;left:50%;top:18px;transform:translateX(-50%);width:min(1180px,94vw);height:64px;border-radius:22px;background:rgba(255,250,243,.88);border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 22px;box-shadow:0 14px 50px rgba(23,35,29,.08)}
+.brand{font-weight:950;letter-spacing:.02em}.navlinks{display:flex;gap:25px;font-size:13px}.navlinks a{text-decoration:none;color:#5c685f}.navcta{text-decoration:none;background:var(--ink);color:#fff;padding:11px 17px;border-radius:999px;font-weight:900}
+section{position:relative}.kicker{font-size:11px;letter-spacing:.2em;font-weight:950;color:var(--orange)}.display{font-size:clamp(58px,8.2vw,122px);line-height:.88;letter-spacing:-.068em;margin:16px 0 24px;font-weight:950}.big{font-size:clamp(45px,5.7vw,82px);line-height:.98;letter-spacing:-.055em;margin:14px 0 18px}.lead{font-size:17px;line-height:1.95;color:#657069;max-width:680px}.muted{color:#758079}
+.btns{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:999px;padding:14px 20px;font-weight:900;border:1px solid var(--line);transition:.25s}.btn.primary{background:#d9653f;color:#fff;border-color:transparent;box-shadow:0 10px 24px rgba(217,101,63,.18)}.btn:hover{transform:translateY(-3px)}
+
+/* HERO: uplifting ivory field + warm interactive particles */
+.hero{min-height:100svh;background:linear-gradient(135deg,#fff7ec 0%,#ffe4cf 38%,#f8efe4 66%,#dfeadf 100%);color:var(--ink);overflow:hidden;display:grid;place-items:center}
+#particles{position:absolute;inset:0;width:100%;height:100%;opacity:.92}
+.hero:after{content:"";position:absolute;inset:0;background:
+radial-gradient(circle at 68% 34%,rgba(232,139,84,.20),transparent 22%),
+radial-gradient(circle at 82% 72%,rgba(113,139,118,.18),transparent 25%),
+linear-gradient(180deg,transparent 78%,rgba(255,255,255,.42));pointer-events:none}
+.hero-inner{position:relative;z-index:2;width:min(1200px,91vw);padding:145px 0 80px}
+.hero .kicker{color:#b85d3c}.hero .display em{font-style:normal;color:#d76b43}.hero .lead{color:#5f6b63;max-width:650px}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px}.pill{padding:10px 13px;border:1px solid rgba(23,35,29,.12);border-radius:999px;background:rgba(255,255,255,.52);font-size:12px;font-weight:900;backdrop-filter:blur(8px)}
+.scrollmark{position:absolute;right:4vw;bottom:40px;z-index:2;writing-mode:vertical-rl;font-size:10px;letter-spacing:.22em;color:rgba(23,35,29,.42)}
+
+/* TIME: the schedule is the graphic */
+.time-section{padding:130px 0 120px;background:linear-gradient(180deg,#fffdf9 0%,#f5f0e9 100%)}
+.time-head{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end;margin-bottom:70px}
+.time-stage{display:grid;grid-template-columns:1.08fr .92fr;gap:38px;align-items:stretch}
+.time-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-content:start}
+.time-chip{position:relative;height:132px;border:1px solid rgba(36,53,45,.08);border-radius:26px;background:#fff;color:var(--ink);cursor:pointer;text-align:left;padding:18px;overflow:hidden;transition:.35s}
+.time-chip:before{content:"";position:absolute;inset:auto 0 0;height:0;background:var(--ink);transition:.35s}
+.time-chip span{position:relative;z-index:1;font-size:29px;font-weight:950;letter-spacing:-.04em;transition:.35s}
+.time-chip:hover,.time-chip.active{transform:translateY(-4px)}.time-chip:hover:before,.time-chip.active:before{height:100%}.time-chip:hover span,.time-chip.active span{color:#fff}
+.time-note{border-radius:32px;background:#ffffff;padding:42px;display:flex;flex-direction:column;justify-content:space-between;min-height:416px}
+.time-note strong{font-size:74px;letter-spacing:-.06em}.time-note h3{font-size:29px;margin:12px 0}.time-note p{color:#6c766f;line-height:1.9}.capacity{font-size:12px;font-weight:900;color:var(--orange);letter-spacing:.08em}
+
+/* STORY IMAGE — full, no awkward crop */
+.story{padding:0 0 120px;background:linear-gradient(180deg,#e7f0e5 0%,#dce8da 100%)}
+.story-frame{position:relative;border-radius:42px;overflow:hidden;min-height:720px;box-shadow:var(--shadow);background:#ddd}
+.story-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.story-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,35,29,.77),rgba(23,35,29,.20) 65%,transparent)}
+.story-copy{position:relative;z-index:2;color:#fff;max-width:610px;padding:64px;min-height:720px;display:flex;flex-direction:column;justify-content:flex-end}.story-copy .lead{color:rgba(255,255,255,.82)}
+
+/* LIMITED EVENT: no forced stock breakfast photo */
+.event{padding:120px 0;background:linear-gradient(180deg,#f7d7bf 0%,#f3c29f 100%)}
+.event-shell{display:grid;grid-template-columns:.92fr 1.08fr;gap:22px;align-items:stretch}
+.days{border-radius:38px;background:linear-gradient(145deg,#c95c37,#ed8e55);color:#fff;padding:50px;min-height:600px;display:flex;flex-direction:column;justify-content:space-between}
+.days .num{font-size:clamp(130px,18vw,260px);font-weight:950;letter-spacing:-.1em;line-height:.72}.days p{color:rgba(255,255,255,.86);line-height:1.9}
+.event-info{border-radius:38px;background:linear-gradient(145deg,#2f4d3c,#58715e);color:#fff;padding:52px;display:grid;align-content:center;overflow:hidden;position:relative}
+.event-info:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;border:1px solid rgba(255,255,255,.10);right:-90px;top:-80px;box-shadow:0 0 0 80px rgba(255,255,255,.025),0 0 0 160px rgba(255,255,255,.018)}
+.event-info h3{font-size:48px;margin:10px 0 20px}.event-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}.event-item{padding:18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);font-weight:850}
+
+/* PRODUCTS: one hero product at a time */
+.products{padding:125px 0;background:linear-gradient(180deg,#f3dfd1 0%,#eee8df 34%,#e7ebe5 72%,#dfe9dd 100%)}
+.product-head{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end;margin-bottom:56px}
+.product-stage{display:grid;grid-template-columns:190px 1fr;gap:18px;min-height:670px}
+.product-index{display:flex;flex-direction:column;gap:8px}
+.p-tab{border:1px solid var(--line);background:rgba(255,250,244,.62);border-radius:18px;padding:16px 14px;text-align:left;cursor:pointer;transition:.25s;font-weight:900;color:#68736c}
+.p-tab small{display:block;color:var(--orange);margin-bottom:5px}.p-tab:hover,.p-tab.active{background:var(--ink);color:#fff;transform:translateX(5px)}
+.product-hero{position:relative;border-radius:40px;background:rgba(255,252,247,.88);overflow:hidden;border:1px solid var(--line);display:grid;grid-template-columns:1.15fr .85fr;min-height:670px}
+.product-visual{display:grid;place-items:center;padding:42px;background:radial-gradient(circle at 48% 42%,#fffdf9 0%,#f3eee7 48%,#e4e9e3 100%)}
+.product-visual img{max-width:92%;max-height:500px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 28px 28px rgba(26,36,31,.12));transition:.45s}
+.product-copy{padding:54px 46px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#fffaf4 0%,#f6f1e9 100%)}
+.product-copy .count{font-size:12px;font-weight:900;letter-spacing:.15em;color:var(--orange)}.product-copy h3{font-size:46px;line-height:1.05;margin:16px 0 20px;letter-spacing:-.045em}.product-copy p{color:#66716a;line-height:1.95;font-size:15px}.product-hint{margin-top:28px;font-size:12px;color:#909890}
+.product-hero.flash .product-visual img{transform:scale(.96);opacity:.35}
+
+/* PEOPLE: use images only where they have a clear purpose */
+.people{padding:120px 0;background:linear-gradient(180deg,#dbe8da 0%,#edf3ea 100%)}
+.people-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.people-photo{border-radius:38px;overflow:hidden;background:#ddd;min-height:640px}.people-photo img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.people-copy{border-radius:38px;background:#f7fbf6;padding:54px;display:flex;flex-direction:column;justify-content:center}
+.people-copy .quote{font-size:37px;line-height:1.28;letter-spacing:-.035em;font-weight:900;margin:14px 0 24px}.checks{display:grid;gap:10px;margin-top:24px}.check{background:rgba(255,255,255,.66);padding:16px 17px;border-radius:16px;font-weight:850}
+
+/* VISIT: same schedule count as above */
+.visit{padding:125px 0;background:linear-gradient(145deg,#385846 0%,#58715e 55%,#8a7a60 100%);color:#fff}
+.visit-head{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end;margin-bottom:48px}.visit .lead{color:#c7d0ca}
+.slots{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}
+.slot{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:22px 8px;text-align:center;transition:.25s}.slot:hover{background:var(--orange);transform:translateY(-4px)}.slot b{display:block;font-size:20px}.slot span{font-size:10px;color:#cdd4d0}
+.visit-actions{margin-top:32px;display:flex;justify-content:space-between;gap:30px;align-items:center}.visit-note{font-size:12px;color:#9eaaa3;line-height:1.8;max-width:620px}
+
+/* RESERVATION: restores the original site's action/interaction layer */
+.reserve{padding:125px 0;background:linear-gradient(180deg,#f8ddc8 0%,#f3e2d3 100%)}
+.reserve-shell{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:stretch}
+.reserve-intro{border-radius:38px;background:linear-gradient(145deg,#c85b38,#ea8b54);color:#fff;padding:52px;display:flex;flex-direction:column;justify-content:space-between;min-height:620px}
+.reserve-intro .kicker{color:#ffe3cf}.reserve-intro .big{font-size:clamp(48px,5.8vw,78px)}
+.reserve-intro p{line-height:1.9;color:rgba(255,255,255,.86)}
+.reserve-form{border-radius:38px;background:#fffdf9;padding:44px;border:1px solid var(--line);box-shadow:0 22px 70px rgba(23,35,29,.09)}
+.reserve-form h3{font-size:30px;margin:0 0 8px}.reserve-form .hint{font-size:13px;color:#7a837d;line-height:1.7;margin-bottom:24px}
+.reserve-times{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:22px}
+.reserve-time{border:1px solid var(--line);background:#f7f3ed;border-radius:15px;padding:14px 10px;font-weight:900;cursor:pointer;transition:.22s}
+.reserve-time:hover,.reserve-time.active{background:var(--ink);color:#fff;transform:translateY(-2px)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:900;color:#5f6a63}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px 14px;font:inherit;color:var(--ink);outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#d86a42;box-shadow:0 0 0 3px rgba(216,106,66,.10)}
+.reserve-submit{margin-top:18px;width:100%;border:0;border-radius:999px;padding:15px 18px;background:var(--ink);color:#fff;font-weight:900;cursor:pointer;transition:.22s}
+.reserve-submit:hover{transform:translateY(-2px);background:#223329}
+.reserve-status{min-height:22px;margin-top:12px;font-size:13px;color:#5f7766;font-weight:800}
+.demo-note{font-size:11px;color:#8b938e;line-height:1.65;margin-top:13px}
+@media(max-width:950px){.reserve-shell{grid-template-columns:1fr}.reserve-intro{min-height:auto}.reserve-times{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.reserve{padding:88px 0}.reserve-intro,.reserve-form{padding:30px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.reserve-times{grid-template-columns:repeat(2,1fr)}}
+
+/* LOCATION / NAVIGATION */
+.location{padding:0 0 125px;background:linear-gradient(180deg,#e5eee4 0%,#f5f1e9 100%)}
+.location-shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+.contact-card{border-radius:38px;background:#ffffff;padding:46px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;min-height:520px}
+.contact-card h3{font-size:40px;line-height:1.12;margin:14px 0 22px;letter-spacing:-.045em}
+.contact-list{display:grid;gap:12px;margin-top:28px}
+.contact-row{padding:17px 18px;border-radius:18px;background:#f7f3ed}
+.contact-row small{display:block;color:#8a938d;font-size:11px;font-weight:900;letter-spacing:.08em;margin-bottom:6px}
+.contact-row strong{font-size:17px}
+.map-card{position:relative;min-height:520px;border-radius:38px;overflow:hidden;background:
+ linear-gradient(90deg,rgba(255,255,255,.25) 1px,transparent 1px) 0 0/52px 52px,
+ linear-gradient(rgba(255,255,255,.25) 1px,transparent 1px) 0 0/52px 52px,
+ linear-gradient(135deg,#dce7dc,#efe4d4)}
+.map-card:before,.map-card:after{content:"";position:absolute;background:rgba(255,255,255,.72);border-radius:999px;transform:rotate(-18deg)}
+.map-card:before{width:720px;height:58px;left:-120px;top:190px;box-shadow:0 110px 0 rgba(255,255,255,.52)}
+.map-card:after{width:520px;height:40px;right:-120px;top:110px;transform:rotate(38deg)}
+.map-pin{position:absolute;z-index:3;left:56%;top:44%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50% 50% 50% 0;background:#d96b43;transform:translate(-50%,-50%) rotate(-45deg);box-shadow:0 18px 35px rgba(139,76,48,.25)}
+.map-pin:after{content:"";position:absolute;width:26px;height:26px;border-radius:50%;background:#fff;left:23px;top:23px}
+.map-label{position:absolute;z-index:4;left:56%;top:58%;transform:translateX(-50%);background:rgba(255,255,255,.93);backdrop-filter:blur(10px);padding:16px 19px;border-radius:18px;box-shadow:0 12px 30px rgba(23,35,29,.12);min-width:255px;text-align:center}
+.map-label strong{display:block;font-size:17px;margin-bottom:4px}.map-label span{font-size:12px;color:#707b74}
+.map-actions{position:absolute;z-index:5;left:22px;right:22px;bottom:22px;display:flex;gap:10px}
+.map-action{flex:1;text-align:center;text-decoration:none;padding:14px 16px;border-radius:999px;background:#fff;font-weight:900;border:1px solid rgba(23,35,29,.1);transition:.22s}
+.map-action.primary{background:var(--ink);color:#fff}.map-action:hover{transform:translateY(-2px)}
+@media(max-width:950px){.location-shell{grid-template-columns:1fr}.contact-card{min-height:auto}}
+@media(max-width:620px){.location{padding-bottom:88px}.contact-card{padding:30px}.map-actions{flex-direction:column}.map-card{min-height:560px}}
+
+footer{padding:28px 0 40px;background:var(--ink);color:#8e9b94;font-size:11px;border-top:1px solid rgba(255,255,255,.06)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.7,.2,1)}.reveal.on{opacity:1;transform:none}
+
+@media(max-width:950px){
+ .navlinks{display:none}.time-head,.time-stage,.event-shell,.product-head,.people-grid,.visit-head{grid-template-columns:1fr}
+ .time-rail{grid-template-columns:repeat(3,1fr)}.product-stage{grid-template-columns:1fr}.product-index{display:grid;grid-template-columns:repeat(3,1fr)}.product-hero{grid-template-columns:1fr}
+ .slots{grid-template-columns:repeat(3,1fr)}.story-frame,.story-copy{min-height:620px}
+}
+@media(max-width:620px){
+ .display{font-size:61px}.big{font-size:45px}.hero-inner{padding-top:130px}.time-section,.event,.products,.people,.visit{padding:88px 0}
+ .time-rail{grid-template-columns:repeat(2,1fr)}.time-chip{height:104px}.time-chip span{font-size:24px}
+ .event-list{grid-template-columns:1fr}.product-index{grid-template-columns:1fr 1fr}.product-copy{padding:32px 26px}.product-copy h3{font-size:34px}
+ .people-photo{min-height:460px}.people-copy{padding:32px}.story-copy{padding:30px}.slots{grid-template-columns:repeat(3,1fr)}.visit-actions{display:block}
+}
+/* visual rhythm: subtle tonal bridges between sections */
+.time-section:before,.event:before,.products:before,.people:before,.reserve:before,.visit:before{
+  content:"";position:absolute;left:0;right:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(36,53,45,.12),transparent)
+}
+section{isolation:isolate}
+
+/* Faster visual rhythm for commercial browsing */
+.time-section::after,.story::after,.event::after,.products::after,.people::after,.reserve::after,.location::after{
+ content:"";position:absolute;left:50%;bottom:-1px;transform:translateX(-50%);
+ width:min(1200px,91vw);height:6px;border-radius:999px;opacity:.95;z-index:3
+}
+.time-section::after{background:linear-gradient(90deg,#e19a6b,#d8b294)}
+.story::after{background:linear-gradient(90deg,#8fa88e,#6f8b75)}
+.event::after{background:linear-gradient(90deg,#e67843,#c95836)}
+.products::after{background:linear-gradient(90deg,#d59a77,#a8ad96,#7f9a81)}
+.people::after{background:linear-gradient(90deg,#7f9a81,#adc2aa)}
+.reserve::after{background:linear-gradient(90deg,#d96b43,#e9a36f)}
+.location::after{background:linear-gradient(90deg,#7c987f,#d4c3ad)}
+</style>
+</head>
+<body>
+<nav class="nav">
+ <div class="brand">益健堂 · 健康体验门店</div>
+ <div class="navlinks"><a href="#time">体验时间</a><a href="#event">限时福利</a><a href="#products">真实设备</a><a href="#people">门店体验</a><a href="#location">门店位置</a><a href="#visit">到店安排</a></div>
+ <a class="navcta" href="#reserve">预约体验</a>
+</nav>
+
+<main>
+<section class="hero">
+ <canvas id="particles"></canvas>
+ <div class="hero-inner">
+   <div class="kicker">YI JIAN TANG · HEALTH EXPERIENCE STORE</div>
+   <h1 class="display">先体验。<br><em>再决定。</em></h1>
+   <p class="lead">为中老年家庭提供清晰、从容的健康体验路径。先体验，再了解设备，再决定是否进一步选择。</p>
+   <div class="hero-meta"><span class="pill">06:00 起</span><span class="pill">分时到店</span><span class="pill">免费体验</span><span class="pill">真实设备</span></div>
+ </div>
+ <div class="scrollmark">SCROLL TO EXPERIENCE</div>
+</section>
+
+<section id="time" class="time-section">
+ <div class="wrap">
+  <div class="time-head reveal">
+   <div>
+     <div class="kicker">MORNING EXPERIENCE · 06:00</div>
+     <div style="font-size:clamp(92px,13vw,182px);font-weight:950;line-height:.78;letter-spacing:-.085em;color:#d86a42;margin:14px 0 30px">06:00</div>
+     <h2 class="big" style="max-width:760px">清晨六点，<br>第一场体验开始。</h2>
+   </div>
+   <div>
+     <p class="lead" style="font-size:20px;color:#3f4d45;margin-bottom:18px">分时入场，让等待更少，让每一次体验更从容。</p>
+     <p class="lead">从早间第一场开始，依照时段有序安排。首次到店只需要先确认时间、取号入场，再根据门店当天设备情况完成体验。</p>
+   </div>
+  </div>
+  <div class="time-stage">
+   <div class="time-rail reveal"><button class="time-chip" data-time="06:00"><span>06:00</span></button><button class="time-chip" data-time="07:00"><span>07:00</span></button><button class="time-chip" data-time="08:00"><span>08:00</span></button><button class="time-chip" data-time="09:00"><span>09:00</span></button><button class="time-chip" data-time="10:00"><span>10:00</span></button><button class="time-chip" data-time="11:00"><span>11:00</span></button><button class="time-chip" data-time="14:00"><span>14:00</span></button><button class="time-chip" data-time="15:00"><span>15:00</span></button><button class="time-chip" data-time="16:00"><span>16:00</span></button></div>
+   <div class="time-note reveal">
+     <div><div class="capacity">SELECT A TIME · 查看场次</div><strong id="activeTime">06:00</strong><h3>第一批开始体验</h3><p id="timeText">按照当天安排取号入场。每人约体验一个流程，体验内容以门店实际设备安排为准。</p></div>
+     <div class="muted">点击左侧时间，页面会明确反馈当前选择。</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="event" class="event">
+ <div class="wrap event-shell">
+   <div class="days reveal">
+     <div><div class="kicker" style="color:#ffe0cb">LIMITED MORNING EVENT</div><div class="num">30</div></div>
+     <div><h2 style="font-size:48px;margin:0 0 12px">DAYS</h2><p>暂定30天早间暖心福利。活动是阶段性的，免费体验与真实设备才是门店长期核心。</p></div>
+   </div>
+   <div class="event-info reveal">
+     <div class="kicker" style="color:#f2aa7d">MORNING GIFT</div>
+     <h3>早一点来，<br>多一份暖心。</h3>
+     <p style="color:#c9d2cc;line-height:1.9">早间到店体验的中老年朋友，可领取一份包子与豆浆。具体日期、数量及发放安排以门店当天为准。</p>
+     <div class="event-list"><div class="event-item">包子 × 1</div><div class="event-item">豆浆 × 1</div><div class="event-item">早间到店</div><div class="event-item">限时30天</div></div>
+   </div>
+ </div>
+</section>
+
+<section id="products" class="products">
+ <div class="wrap">
+  <div class="product-head reveal">
+   <div><div class="kicker">REAL EQUIPMENT · REAL CHOICE</div><h2 class="big">不是商城货架。<br>一次只看一个。</h2></div>
+   <p class="lead">六款设备不再平均塞进六张卡片。选择哪一款，哪一款就是当前视觉主角；其他信息自动退后。</p>
+  </div>
+  <div class="product-stage reveal">
+    <div class="product-index" id="productTabs"></div>
+    <div class="product-hero" id="productHero">
+      <div class="product-visual"><img id="productImg" alt=""></div>
+      <div class="product-copy"><div class="count" id="productCount"></div><h3 id="productName"></h3><p id="productDesc"></p><div class="product-hint">点击左侧产品切换 · 手机端直接点选</div></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="people" class="people">
+ <div class="wrap people-grid">
+   <div class="people-copy reveal">
+     <div class="kicker">SERVICE IS PART OF THE EXPERIENCE</div>
+     <div class="quote">设备是入口，<br>人与人的交流，才让体验变得可信。</div>
+     <p class="lead">网站不需要把每一种效果都做满。真正重要的是，让第一次来的中老年人和家属感到：这里看得懂、有人解释、可以自己决定下一步。</p>
+     <div class="checks"><div class="check">先体验，再决定是否进一步了解</div><div class="check">分时安排，减少无意义等待</div><div class="check">产品信息清楚，不夸大功效</div></div>
+   </div>
+ </div>
+</section>
+
+<section id="reserve" class="reserve">
+ <div class="wrap reserve-shell">
+   <div class="reserve-intro reveal">
+     <div>
+       <div class="kicker">BOOK AN EXPERIENCE</div>
+       <h2 class="big">想来体验，<br>先选一个合适的时间。</h2>
+       <p>把“下一步怎么做”放回网站里。用户看完时间、设备和门店体验后，可以直接选择意向场次，留下基础联系信息。</p>
+     </div>
+     <div style="font-size:14px;font-weight:900">免费体验 · 分时到店 · 场次以门店当天安排为准</div>
+   </div>
+   <form class="reserve-form reveal" id="reserveForm">
+     <h3>预约体验意向</h3>
+     <div class="hint">先选时间，再填写基础信息。当前为展示版交互，不会把信息发送到门店后台。</div>
+     <div class="reserve-times"><button type="button" class="reserve-time" data-reserve="06:00">06:00</button><button type="button" class="reserve-time" data-reserve="07:00">07:00</button><button type="button" class="reserve-time" data-reserve="08:00">08:00</button><button type="button" class="reserve-time" data-reserve="09:00">09:00</button><button type="button" class="reserve-time" data-reserve="10:00">10:00</button><button type="button" class="reserve-time" data-reserve="11:00">11:00</button><button type="button" class="reserve-time" data-reserve="14:00">14:00</button><button type="button" class="reserve-time" data-reserve="15:00">15:00</button><button type="button" class="reserve-time" data-reserve="16:00">16:00</button></div>
+     <input type="hidden" id="reserveSelectedTime" value="">
+     <div class="fields">
+       <div class="field"><label for="visitorName">称呼</label><input id="visitorName" placeholder="例如：李阿姨 / 王先生"></div>
+       <div class="field"><label for="visitorPhone">联系电话</label><input id="visitorPhone" inputmode="tel" placeholder="用于门店联系确认"></div>
+       <div class="field"><label for="visitorNeed">主要想了解</label>
+         <select id="visitorNeed"><option>肩颈 / 腰背体验</option><option>设备产品</option><option>供氧相关</option><option>先到店了解</option></select>
+       </div>
+       <div class="field"><label for="visitorRelation">来店人</label>
+         <select id="visitorRelation"><option>本人</option><option>父母 / 长辈</option><option>陪同家人</option></select>
+       </div>
+       <div class="field full"><label for="visitorNote">备注（可选）</label><textarea id="visitorNote" rows="3" placeholder="例如：希望安排上午场次"></textarea></div>
+     </div>
+     <button class="reserve-submit" type="submit">确认预约意向</button>
+     <div class="reserve-status" id="reserveStatus"></div>
+     <div class="demo-note">演示说明：当前静态网页不会实际收集或发送个人信息；正式上线后可再接入表单、电话、二维码或门店后台。</div>
+   </form>
+ </div>
+</section>
+
+<section id="location" class="location">
+  <div class="wrap location-shell">
+    <div class="contact-card reveal">
+      <div>
+        <div class="kicker">STORE LOCATION · DEMO</div>
+        <h3>到店之前，<br>先把路线看清楚。</h3>
+        <p class="lead">地址与联系电话目前为演示信息，正式上线时替换为门店真实资料即可。</p>
+      </div>
+      <div class="contact-list">
+        <div class="contact-row"><small>门店地址</small><strong>安徽省合肥市包河区滨湖小区XXX</strong></div>
+        <div class="contact-row"><small>到店联系</small><strong>张先生</strong></div>
+        <div class="contact-row"><small>联系电话</small><strong>139-XXXX-7777</strong></div>
+      </div>
+    </div>
+    <div class="map-card reveal" aria-label="门店导航示意地图">
+      <div class="map-pin"></div>
+      <div class="map-label"><strong>益健堂 · 健康体验门店</strong><span>合肥市包河区 · 滨湖片区</span></div>
+      <div class="map-actions">
+        <a class="map-action primary" href="https://uri.amap.com/search?keyword=%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E5%8C%85%E6%B2%B3%E5%8C%BA%E6%BB%A8%E6%B9%96%E5%B0%8F%E5%8C%BAXXX&src=warm-care-demo&callnative=1" target="_blank" rel="noopener">高德地图导航</a>
+        <a class="map-action" href="https://api.map.baidu.com/geocoder?address=%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E5%8C%85%E6%B2%B3%E5%8C%BA%E6%BB%A8%E6%B9%96%E5%B0%8F%E5%8C%BAXXX&output=html&src=webapp.baidu.openAPIdemo" target="_blank" rel="noopener">百度地图查看</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+ <div class="wrap">
+   <div class="visit-head reveal">
+     <div><div class="kicker" style="color:#ef9c6a">VISIT SCHEDULE</div><h2 class="big">什么时候来，<br>一眼看明白。</h2></div>
+     <p class="lead">九个场次完整对应，从清晨到下午保持一致的信息秩序，让首次访问者无需猜测下一步。</p>
+   </div>
+   <div class="slots reveal"><div class="slot"><b>06:00</b><span>体验场次</span></div><div class="slot"><b>07:00</b><span>体验场次</span></div><div class="slot"><b>08:00</b><span>体验场次</span></div><div class="slot"><b>09:00</b><span>体验场次</span></div><div class="slot"><b>10:00</b><span>体验场次</span></div><div class="slot"><b>11:00</b><span>体验场次</span></div><div class="slot"><b>14:00</b><span>体验场次</span></div><div class="slot"><b>15:00</b><span>体验场次</span></div><div class="slot"><b>16:00</b><span>体验场次</span></div></div>
+   <div class="visit-actions reveal">
+      <div class="visit-note">体验次数、当日名额及后续场次尚未最终确定，因此网站不写死承诺。具体体验安排、活动名额及产品情况以门店当日实际情况为准。</div>
+      <a class="btn primary" href="#reserve">选择预约场次</a>
+   </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">益健堂中老年健康体验门店 · V3 视觉与交互小样</div></footer>
+
 <script>
-const TIMES=['06:00','07:00','08:00','09:00','10:00','11:00','14:00','15:00','16:00'];const INFO=[['红蓝光治疗仪','辅助消炎消肿、缓解疼痛，促进局部血液循环与伤口愈合'],['毫米波治疗仪','改善局部血液循环，辅助消炎、消肿、止痛及组织恢复'],['半导体激光治疗仪','用于血脂、血糖、血压及相关心脑血管问题的辅助治疗'],['中频治疗仪','辅助缓解颈肩腰腿、关节及软组织损伤等常见不适'],['半导体激光血氧治疗仪','辅助改善部分心脑血管疾病引起的缺血、缺氧症状'],['医用分子筛制氧机','用于氧疗，帮助缓解因缺氧导致的相关不适']];
-const rail=document.getElementById('timeRail'),rt=document.getElementById('reserveTimes'),slots=document.getElementById('slots');TIMES.forEach((t,i)=>{let b=document.createElement('button');b.className='time-chip'+(i===0?' active':'');b.textContent=t;b.onclick=()=>{document.querySelectorAll('.time-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeTime.textContent=t;timeText.textContent=(i<6?'上午':'下午')+'分时体验场次。按照当天安排取号入场，具体体验内容与名额以门店实际情况为准。'};rail.appendChild(b);let r=document.createElement('button');r.type='button';r.className='reserve-time';r.textContent=t;r.onclick=()=>{document.querySelectorAll('.reserve-time').forEach(x=>x.classList.remove('active'));r.classList.add('active');reserveSelectedTime.value=t;reserveStatus.textContent='已选择 '+t+' 场次'};rt.appendChild(r);let s=document.createElement('div');s.className='slot';s.innerHTML='<b>'+t+'</b><span>体验场次</span>';slots.appendChild(s)});
-(async()=>{const imgs=[];for(let i=1;i<=6;i++){try{const b=(await fetch('assets/p'+i+'.b64')).text();imgs.push('data:image/webp;base64,'+b.trim())}catch(e){imgs.push('')}}const tabs=document.getElementById('productTabs');function show(i){productImg.src=imgs[i];productName.textContent=INFO[i][0];productDesc.textContent=INFO[i][1];productCount.textContent=String(i+1).padStart(2,'0')+' / 06';[...tabs.children].forEach((x,n)=>x.classList.toggle('active',n===i))}INFO.forEach((p,i)=>{let b=document.createElement('button');b.className='p-tab'+(i===0?' active':'');b.innerHTML='<small>'+String(i+1).padStart(2,'0')+'</small>'+p[0];b.onclick=()=>show(i);tabs.appendChild(b)});show(0)})();
-fetch('%E4%B8%AD%E8%80%81%E5%B9%B4%E8%85%B0%E8%83%8C%E5%81%A5%E5%BA%B7%E9%97%A8%E5%BA%97-Demo.html').then(r=>r.text()).then(t=>{const m=[...t.matchAll(/data:image\/webp;base64,([^\"]+)/g)];if(m[0])scenePhoto.src=m[0][1].startsWith('data:')?m[0][1]:'data:image/webp;base64,'+m[0][1];if(m[1])peoplePhoto.src='data:image/webp;base64,'+m[1][1]}).catch(()=>{});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));reserveForm.onsubmit=e=>{e.preventDefault();const t=reserveSelectedTime.value,n=visitorName.value.trim(),p=visitorPhone.value.trim();if(!t)return reserveStatus.textContent='请先选择一个意向场次。';if(!n||!p)return reserveStatus.textContent='请填写称呼和联系电话，完成交互演示。';reserveStatus.textContent='预约交互演示完成：'+t+' · '+n+'。当前页面不会实际发送信息。'};
-const c=document.getElementById('particles'),ctx=c.getContext('2d');let pts=[],mouse={x:-999,y:-999};function resize(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);pts=Array.from({length:Math.min(150,Math.floor(innerWidth/8))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*1.8+.45,a:Math.random()*.55+.15}))}addEventListener('resize',resize);addEventListener('pointermove',e=>mouse={x:e.clientX,y:e.clientY});resize();(function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;let dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);if(d<120){p.x+=dx/(d||1)*.35;p.y+=dy/(d||1)*.35}ctx.beginPath();ctx.fillStyle='rgba(203,112,72,'+p.a+')';ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()}requestAnimationFrame(draw)})();
-</script></body></html>
+const PRODUCTS=[{"name":"红蓝光治疗仪","desc":"辅助消炎消肿、缓解疼痛，促进局部血液循环与伤口愈合","b64":"assets/p1.b64"},{"name":"毫米波治疗仪","desc":"改善局部血液循环，辅助消炎、消肿、止痛及组织恢复","b64":"assets/p2.b64"},{"name":"半导体激光治疗仪","desc":"用于血脂、血糖、血压及相关心脑血管问题的辅助治疗","b64":"assets/p3.b64"},{"name":"中频治疗仪","desc":"辅助缓解颈肩腰腿、关节及软组织损伤等常见不适","b64":"assets/p4.b64"},{"name":"半导体激光血氧治疗仪","desc":"辅助改善部分心脑血管疾病引起的缺血、缺氧症状","b64":"assets/p5.b64"},{"name":"医用分子筛制氧机","desc":"用于氧疗，帮助缓解因缺氧导致的相关不适","b64":"assets/p6.b64"}];
+const tabs=document.getElementById('productTabs'), hero=document.getElementById('productHero');
+const pImg=document.getElementById('productImg'), pName=document.getElementById('productName'), pDesc=document.getElementById('productDesc'), pCount=document.getElementById('productCount');
+async function showProduct(i){
+ hero.classList.add('flash');
+ const p=PRODUCTS[i];
+ try{
+   if(!p.img){
+     const txt=(await fetch(p.b64,{cache:'force-cache'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.text()})).trim();
+     p.img='data:image/webp;base64,'+txt;
+   }
+   setTimeout(()=>{
+     pImg.src=p.img;pImg.alt=p.name;pName.textContent=p.name;pDesc.textContent=p.desc;pCount.textContent=String(i+1).padStart(2,'0')+" / "+String(PRODUCTS.length).padStart(2,'0');
+     [...tabs.children].forEach((b,n)=>b.classList.toggle('active',n===i));
+     hero.classList.remove('flash');
+   },120);
+ }catch(e){
+   hero.classList.remove('flash');
+   pName.textContent=p.name;
+   pDesc.textContent=p.desc+'（产品图片加载失败，请刷新页面重试）';
+ }
+}
+PRODUCTS.forEach((p,i)=>{const b=document.createElement('button');b.className='p-tab'+(i===0?' active':'');b.innerHTML='<small>'+String(i+1).padStart(2,'0')+'</small>'+p.name;b.onclick=()=>showProduct(i);tabs.appendChild(b)});
+showProduct(0);
+
+document.querySelectorAll('.time-chip').forEach((b,i)=>{
+ if(i===0)b.classList.add('active');
+ b.onclick=()=>{
+  document.querySelectorAll('.time-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+  const t=b.dataset.time;document.getElementById('activeTime').textContent=t;
+  document.getElementById('timeText').textContent=(i<6?'上午分时体验场次。':'下午分时体验场次。')+' 按照当天安排取号入场，具体体验内容与名额以门店实际情况为准。';
+ }
+});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* warm particle field — inspired by the motion language in the supplied HTML references, not a copied visual */
+const c=document.getElementById('particles'),ctx=c.getContext('2d');let W,H,pts=[],mouse={x:-999,y:-999};
+function resize(){W=c.width=innerWidth*devicePixelRatio;H=c.height=innerHeight*devicePixelRatio;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);seed()}
+function seed(){pts=Array.from({length:Math.min(150,Math.floor(innerWidth/8))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*1.8+.45,a:Math.random()*.55+.15}))}
+addEventListener('resize',resize);addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});resize();
+function draw(){
+ ctx.clearRect(0,0,innerWidth,innerHeight);
+ for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;
+   const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);if(d<120){p.x+=dx/(d||1)*.35;p.y+=dy/(d||1)*.35}
+   ctx.beginPath();ctx.fillStyle='rgba(203,112,72,'+p.a+')';ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+ }
+ requestAnimationFrame(draw)
+}draw();
+
+document.querySelectorAll('.reserve-time').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.reserve-time').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('reserveSelectedTime').value=btn.dataset.reserve;
+    document.getElementById('reserveStatus').textContent='已选择 '+btn.dataset.reserve+' 场次';
+  });
+});
+document.getElementById('reserveForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const t=document.getElementById('reserveSelectedTime').value;
+  const name=document.getElementById('visitorName').value.trim();
+  const phone=document.getElementById('visitorPhone').value.trim();
+  const status=document.getElementById('reserveStatus');
+  if(!t){status.textContent='请先选择一个意向场次。';return;}
+  if(!name || !phone){status.textContent='请填写称呼和联系电话，完成交互演示。';return;}
+  status.textContent='预约交互演示完成：'+t+' · '+name+'。当前页面不会实际发送信息。';
+});
+
+</script>
+</body></html>
