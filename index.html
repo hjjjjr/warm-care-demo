@@ -31,6 +31,8 @@ const R=[
 ['.days .num{font-size:clamp(130px,18vw,260px);font-weight:950;letter-spacing:-.1em;line-height:.72}', '.days .num{font-size:clamp(130px,18vw,260px);font-weight:950;letter-spacing:-.1em;line-height:.72;margin-top:22px}'],
 ['assets/p1.b64','assets/p1-fixed.b64'],
 ['assets/p4.b64','assets/p4-fixed.b64'],
+["p.img='data:image/webp;base64,'+txt;","p.img=(p.b64&&p.b64.includes('fixed')?'data:image/png;base64,':'data:image/webp;base64,')+txt;"],
+['<div class="wrap people-grid">\n   <div class="people-copy reveal">','<div class="wrap people-grid">\n   <div class="people-photo reveal"><img src="https://www.jobma.com/blog/wp-content/uploads/2025/05/Internal-2-19-May.png" alt="照护人员陪伴中老年人活动"></div>\n   <div class="people-copy reveal">'],
 ['<h3>第一批开始体验</h3>','<h3 id="sessionTitle">第一场体验</h3>']
 ];
 for(const [a,b] of R)h=h.split(a).join(b);
